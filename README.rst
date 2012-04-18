@@ -1,3 +1,18 @@
+Installation using virtualenv
+::
+
+    $ git clone git://github.com/saltycrane/chishop.git saltycrane-chishop
+    $ cd saltycrane-chishop/
+    $ virtualenv venv
+    $ source venv/bin/activate
+    $ pip install -r requirements.txt
+    $ pip install -e ./
+    $ cp chishop/settings.py.sample chishop/settings.py
+    $ cd chishop
+    $ ./manage.py syncdb
+    $ ./manage.py migrate
+    $ ./manage.py runserver
+
 =========================================
 ChiShop/DjangoPyPI
 =========================================
